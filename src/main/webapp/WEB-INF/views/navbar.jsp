@@ -1,12 +1,19 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
-</head>
-<body>
-
-</body>
-</html>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<header>	
+	<nav class="navbar navbar-expand-lg bg-body-tertiary">
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="#">Registro prevecion</a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+	      <div class="navbar-nav">
+	        <a class="nav-link active" aria-current="page" href="./">Home</a>
+	        <a class="nav-link" href="listarcapacitacion">Capacitaciones</a>
+	        <a class="nav-link disabled" href="Contacto">Contacto</a>	        
+	      </div>
+	    </div>
+	  </div>
+	</nav>
+</header>
