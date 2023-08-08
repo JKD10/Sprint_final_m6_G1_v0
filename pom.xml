@@ -192,6 +192,11 @@
             <version>${org.junit.jupiter-version}</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+        	<groupId>cl.sprint</groupId>
+        	<artifactId>M6_Grupo2</artifactId>
+        	<version>0.0.1-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
     <build>
