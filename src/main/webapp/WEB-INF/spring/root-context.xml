@@ -17,14 +17,14 @@
     
     <bean id="ds" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 	  <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"></property>
-	  <property name="url" value="jdbc:mysql://127.0.0.1:3306/productos"></property>
+	  <property name="url" value="jdbc:mysql://localhost:3306/modulo6"></property>
 	  <property name="username" value="root"></property>
-	  <property name="password" value=""></property> 
+	  <property name="password" value="3909"></property> 
 	 </bean>
 	 
 	 <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
 		<property name="dataSource" ref="ds"></property>
-		<property name="packagesToScan" value="cl.maven.jpa.product_jpa.model.entity"></property>
+		<property name="packagesToScan" value="cl.sprint.M6_Grupo2.model.entity"></property>
 		<property name="jpaVendorAdapter">
 		<bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter"></bean>
 	</property>
@@ -43,8 +43,8 @@
 			ref="entityManagerFactory"></property>
 	</bean>
 	
-	<context:component-scan base-package="cl.maven.jpa.product_jpa.model"></context:component-scan>
+	<context:component-scan base-package="cl.sprint.M6_Grupo2.model"></context:component-scan>
 	<tx:annotation-driven transaction-manager="transactionManager"/>
-	<jpa:repositories base-package="cl.maven.jpa.product_jpa.model.repository"></jpa:repositories>
+	<jpa:repositories base-package="cl.sprint.M6_Grupo2.model.repository"></jpa:repositories>
 
 </beans>
